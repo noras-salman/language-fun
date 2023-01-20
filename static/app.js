@@ -133,14 +133,14 @@ socket.onmessage = function incoming(event) {
       break;
     case "correct":
       // handle correct answer
-      audio.stop();
+      audio.pause();
       audio.removeEventListener("timeupdate", timeUpdateFunction);
       hide("question_options");
       hide("correct", false);
       break;
     case "wrong":
       // handle correct answer
-      audio.stop();
+      audio.pause();
       audio.removeEventListener("timeupdate", timeUpdateFunction);
       document.getElementById("right_answer").innerHTML =
         "It was " +
