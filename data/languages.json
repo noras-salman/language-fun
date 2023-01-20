@@ -1,0 +1,410 @@
+[
+  { "code": "ab", "name": "Abkhazian", "name_es": "Abjaso" },
+  { "code": "aa", "name": "Afar", "name_es": "Afar" },
+  {
+    "code": "af",
+    "name": "Afrikaans",
+    "url": "https://www.youtube.com/watch?v=7Yq9jf-Cl78",
+    "name_es": "Afrikáans",
+    "family": "germanic"
+  },
+  { "code": "ak", "name": "Akan", "name_es": "Akan" },
+  { "code": "sq", "name": "Albanian", "name_es": "Albanés" },
+  { "code": "am", "name": "Amharic", "name_es": "Amárico" },
+  {
+    "code": "ar",
+    "name": "Arabic",
+    "name_es": "Árabe",
+    "url": "https://www.youtube.com/watch?v=bcUm0yqAwsY",
+    "family": "afro_asiatic"
+  },
+  { "code": "an", "name": "Aragonese", "name_es": "Aragonés" },
+  { "code": "hy", "name": "Armenian", "name_es": "Armenio" },
+  { "code": "as", "name": "Assamese", "name_es": "Asamés" },
+  { "code": "av", "name": "Avaric", "name_es": "Avar" },
+  { "code": "ae", "name": "Avestan", "name_es": "Avestán" },
+  { "code": "ay", "name": "Aymara", "name_es": "Aymara" },
+  { "code": "az", "name": "Azerbaijani", "name_es": "Azerí" },
+  { "code": "bm", "name": "Bambara", "name_es": "Bambara" },
+  { "code": "ba", "name": "Bashkir", "name_es": "Bashkir" },
+  { "code": "eu", "name": "Basque", "name_es": "Vasco" },
+  {
+    "code": "be",
+    "name": "Belarusian",
+    "name_es": "Bielorruso",
+    "family": "salvic"
+  },
+  { "code": "bn", "name": "Bengali", "name_es": "Bengalí" },
+  { "code": "bh", "name": "Bihari languages", "name_es": "Idiomas Bihari" },
+  { "code": "bi", "name": "Bislama", "name_es": "Bislama" },
+  { "code": "bs", "name": "Bosnian", "name_es": "Bosnio", "family": "salvic" },
+  { "code": "br", "name": "Breton", "name_es": "Bretón" },
+  {
+    "code": "bg",
+    "name": "Bulgarian",
+    "family": "romance",
+    "name_es": "Búlgaro",
+    "url": "https://www.youtube.com/watch?v=xVOAqo72m7Q"
+  },
+  { "code": "my", "name": "Burmese", "name_es": "Birmano" },
+  {
+    "code": "ca",
+    "name": "Catalan",
+    "name_es": "Catalan",
+    "url": "https://www.youtube.com/watch?v=5K9H2HXqsxw",
+    "family": "romance"
+  },
+  { "code": "km", "name": "Central Khmer" },
+  { "code": "ch", "name": "Chamorro" },
+  { "code": "ce", "name": "Chechen" },
+  { "code": "ny", "name": "Chichewa, Chewa, Nyanja" },
+  {
+    "code": "zh",
+    "name": "Chinese",
+    "url": "https://www.youtube.com/watch?v=pwuQJjtdt90",
+    "name_es": "Chino"
+  },
+  {
+    "code": "cu",
+    "name": "Church Slavonic, Old Bulgarian, Old Church Slavonic"
+  },
+  { "code": "cv", "name": "Chuvash" },
+  { "code": "kw", "name": "Cornish" },
+  { "code": "co", "name": "Corsican" },
+  { "code": "cr", "name": "Cree" },
+  {
+    "code": "hr",
+    "name": "Croatian",
+    "url": "https://www.youtube.com/watch?v=5eEMnZ9KbvY",
+    "family": "romance",
+    "name_es": "Croata"
+  },
+  {
+    "code": "cs",
+    "name": "Czech",
+    "url": "https://www.youtube.com/watch?v=AGrQXyVegOc",
+    "family": "romance",
+    "name_es": "Checo"
+  },
+  {
+    "code": "da",
+    "name": "Danish",
+    "url": "https://www.youtube.com/watch?v=3gSX30XOHmQ",
+    "name_es": "Danés",
+    "family": "germanic"
+  },
+  { "code": "dv", "name": "Divehi, Dhivehi, Maldivian" },
+  {
+    "code": "nl",
+    "name": "Dutch",
+    "url": "https://www.youtube.com/watch?v=MUtXy7MX9lI",
+    "name_es": "Holandés",
+    "family": "germanic"
+  },
+  { "code": "dz", "name": "Dzongkha" },
+  {
+    "code": "en",
+    "name": "English",
+    "url": "https://www.youtube.com/watch?v=9QCgqQdmr0M",
+    "name_es": "Inglés",
+    "family": "germanic"
+  },
+  { "code": "eo", "name": "Esperanto" },
+  { "code": "et", "name": "Estonian" },
+  { "code": "ee", "name": "Ewe" },
+  { "code": "fo", "name": "Faroese" },
+  { "code": "fj", "name": "Fijian" },
+  { "code": "fi", "name": "Finnish" },
+  {
+    "code": "fr",
+    "name": "French",
+    "url": "https://www.youtube.com/watch?v=z7TV1hRceKM",
+    "name_es": "Francés",
+    "family": "romance"
+  },
+  { "code": "ff", "name": "Fulah" },
+  { "code": "gd", "name": "Gaelic, Scottish Gaelic" },
+  { "code": "gl", "name": "Galician" },
+  { "code": "lg", "name": "Ganda" },
+  { "code": "ka", "name": "Georgian" },
+  {
+    "code": "de",
+    "name": "German",
+    "url": "https://www.youtube.com/watch?v=RlGAbms-rqk",
+    "name_es": "Alemán",
+    "family": "germanic"
+  },
+  { "code": "ki", "name": "Gikuyu, Kikuyu" },
+  {
+    "code": "el",
+    "name": "Greek (Modern)",
+    "url": "https://www.youtube.com/watch?v=5EH2bRl0zug",
+    "name_es": "Griego",
+    "family": "romance"
+  },
+  { "code": "kl", "name": "Greenlandic, Kalaallisut" },
+  { "code": "gn", "name": "Guarani" },
+  { "code": "gu", "name": "Gujarati" },
+  { "code": "ht", "name": "Haitian, Haitian Creole" },
+  { "code": "ha", "name": "Hausa" },
+  {
+    "code": "he",
+    "name": "Hebrew",
+    "url": "https://www.youtube.com/watch?v=xF2tdJ2Ojjo",
+    "name_es": "Hebreo",
+    "family": "afro_asiatic"
+  },
+  { "code": "hz", "name": "Herero" },
+  {
+    "code": "hi",
+    "name": "Hindi",
+    "url": "https://www.youtube.com/watch?v=GNmlu7IN1fs",
+    "name_es": "Hindi"
+  },
+  { "code": "ho", "name": "Hiri Motu" },
+  {
+    "code": "hu",
+    "name": "Hungarian",
+    "url": "https://www.youtube.com/watch?v=m2HHfuF4-ug",
+    "name_es": "Húngaro",
+    "family": "romance"
+  },
+  { "code": "is", "name": "Icelandic" },
+  { "code": "io", "name": "Ido" },
+  { "code": "ig", "name": "Igbo" },
+  {
+    "code": "id",
+    "name": "Indonesian",
+    "url": "https://www.youtube.com/watch?v=k64ew_HZCuA",
+    "name_es": "Indonesio"
+  },
+  {
+    "code": "ia",
+    "name": "Interlingua (International Auxiliary Language Association)"
+  },
+  { "code": "ie", "name": "Interlingue" },
+  { "code": "iu", "name": "Inuktitut" },
+  { "code": "ik", "name": "Inupiaq" },
+  { "code": "ga", "name": "Irish" },
+  {
+    "code": "it",
+    "name": "Italian",
+    "url": "https://www.youtube.com/watch?v=VxnPd0PgqjU",
+    "name_es": "Italiano",
+    "family": "romance"
+  },
+  {
+    "code": "ja",
+    "name": "Japanese",
+    "url": "https://www.youtube.com/watch?v=qK--SAlGD0Q",
+    "name_es": "Japonés",
+    "family": "japonic"
+  },
+  { "code": "jv", "name": "Javanese" },
+  { "code": "kn", "name": "Kannada" },
+  { "code": "kr", "name": "Kanuri" },
+  { "code": "ks", "name": "Kashmiri" },
+  { "code": "kk", "name": "Kazakh" },
+  { "code": "rw", "name": "Kinyarwanda" },
+  { "code": "kv", "name": "Komi" },
+  { "code": "kg", "name": "Kongo" },
+  {
+    "code": "ko",
+    "name": "Korean",
+    "url": "https://www.youtube.com/watch?v=uRXzoOZvz-g",
+    "name_es": "Coreano",
+    "family": "japonic"
+  },
+  { "code": "kj", "name": "Kwanyama, Kuanyama" },
+  {
+    "code": "ku",
+    "name": "Kurdish",
+    "url": "https://www.youtube.com/watch?v=nvFxvkwvVnI",
+    "name_es": "Kurdo",
+    "family": "afro_asiatic"
+  },
+  { "code": "ky", "name": "Kyrgyz" },
+  { "code": "lo", "name": "Lao" },
+  { "code": "la", "name": "Latin" },
+  {
+    "code": "lv",
+    "name": "Latvian",
+    "url": "https://www.youtube.com/watch?v=bqkeAx5X2x0",
+    "name_es": "Letón"
+  },
+  { "code": "lb", "name": "Letzeburgesch, Luxembourgish" },
+  { "code": "li", "name": "Limburgish, Limburgan, Limburger" },
+  { "code": "ln", "name": "Lingala" },
+  { "code": "lt", "name": "Lithuanian" },
+  { "code": "lu", "name": "Luba-Katanga" },
+  { "code": "mk", "name": "Macedonian", "family": "salvic" },
+  { "code": "mg", "name": "Malagasy" },
+  { "code": "ms", "name": "Malay" },
+  { "code": "ml", "name": "Malayalam" },
+  { "code": "mt", "name": "Maltese" },
+  { "code": "gv", "name": "Manx" },
+  { "code": "mi", "name": "Maori" },
+  { "code": "mr", "name": "Marathi" },
+  { "code": "mh", "name": "Marshallese" },
+  { "code": "ro", "name": "Moldovan, Moldavian, Romanian" },
+  { "code": "mn", "name": "Mongolian" },
+  { "code": "na", "name": "Nauru" },
+  { "code": "nv", "name": "Navajo, Navaho" },
+  { "code": "nd", "name": "Northern Ndebele" },
+  { "code": "ng", "name": "Ndonga" },
+  { "code": "ne", "name": "Nepali" },
+  { "code": "se", "name": "Northern Sami" },
+  {
+    "code": "no",
+    "name": "Norwegian",
+    "url": "https://www.youtube.com/watch?v=86CvfPPd778",
+    "name_es": "Noruego",
+    "family": "germanic"
+  },
+  { "code": "nb", "name": "Norwegian Bokmål" },
+  { "code": "nn", "name": "Norwegian Nynorsk" },
+  { "code": "ii", "name": "Nuosu, Sichuan Yi" },
+  { "code": "oc", "name": "Occitan (post 1500)" },
+  { "code": "oj", "name": "Ojibwa" },
+  { "code": "or", "name": "Oriya" },
+  { "code": "om", "name": "Oromo" },
+  { "code": "os", "name": "Ossetian, Ossetic" },
+  { "code": "pi", "name": "Pali" },
+  { "code": "pa", "name": "Panjabi, Punjabi" },
+  { "code": "ps", "name": "Pashto, Pushto" },
+  {
+    "code": "fa",
+    "name": "Persian",
+    "url": "https://www.youtube.com/watch?v=lPp3-afDqW4",
+    "name_es": "Persa"
+  },
+  {
+    "code": "pl",
+    "name": "Polish",
+    "url": "https://www.youtube.com/watch?v=h6qW2G5urEg",
+    "family": "germanic",
+    "name_es": "Polaco"
+  },
+  {
+    "code": "pt",
+    "name": "Portuguese",
+    "url": "https://www.youtube.com/watch?v=wfs_PNA_R-M",
+    "name_es": "Portugués",
+    "family": "romance"
+  },
+  { "code": "qu", "name": "Quechua" },
+  { "code": "rm", "name": "Romansh" },
+  { "code": "rn", "name": "Rundi" },
+  {
+    "code": "ru",
+    "name": "Russian",
+    "url": "https://www.youtube.com/watch?v=GkTrJxOHJS0",
+    "family": "salvic",
+    "name_es": "Ruso"
+  },
+  { "code": "sm", "name": "Samoan" },
+  { "code": "sg", "name": "Sango" },
+  { "code": "sa", "name": "Sanskrit" },
+  { "code": "sc", "name": "Sardinian" },
+  {
+    "code": "sr",
+    "name": "Serbian",
+    "url": "https://www.youtube.com/watch?v=bUl2uJ9O5Cs",
+    "family": "salvic",
+    "name_es": "Serbio"
+  },
+  { "code": "sn", "name": "Shona" },
+  { "code": "sd", "name": "Sindhi" },
+  { "code": "si", "name": "Sinhala, Sinhalese" },
+  { "code": "sk", "name": "Slovak", "family": "salvic" },
+  { "code": "sl", "name": "Slovenian", "family": "salvic" },
+  { "code": "so", "name": "Somali" },
+  { "code": "st", "name": "Sotho, Southern" },
+  { "code": "nr", "name": "South Ndebele" },
+  {
+    "code": "es",
+    "name": "Spanish",
+    "url": "https://www.youtube.com/watch?v=bI8rxIe-BV0",
+    "name_es": "Español",
+    "family": "romance"
+  },
+  { "code": "su", "name": "Sundanese" },
+  {
+    "code": "sw",
+    "name": "Swahili",
+    "url": "https://www.youtube.com/watch?v=JBfvkO9yjiI",
+    "name_es": "Swahili",
+    "family": "afro_asiatic"
+  },
+  { "code": "ss", "name": "Swati" },
+  {
+    "code": "sv",
+    "name": "Swedish",
+    "url": "https://www.youtube.com/watch?v=Z2kFOI38rC4",
+    "name_es": "Sueco",
+    "family": "germanic"
+  },
+  {
+    "code": "tl",
+    "name": "Tagalog",
+    "url": "https://www.youtube.com/watch?v=COCDy-fArTk",
+    "name_es": "Tagalo"
+  },
+  { "code": "ty", "name": "Tahitian" },
+  { "code": "tg", "name": "Tajik" },
+  { "code": "ta", "name": "Tamil" },
+  { "code": "tt", "name": "Tatar" },
+  { "code": "te", "name": "Telugu" },
+  {
+    "code": "th",
+    "name": "Thai",
+    "url": "https://www.youtube.com/watch?v=XxlwBBIlD38",
+    "name_es": "Tailandés"
+  },
+  { "code": "bo", "name": "Tibetan" },
+  { "code": "ti", "name": "Tigrinya" },
+  { "code": "to", "name": "Tonga (Tonga Islands)" },
+  { "code": "ts", "name": "Tsonga" },
+  { "code": "tn", "name": "Tswana" },
+  {
+    "code": "tr",
+    "name": "Turkish",
+    "url": "https://www.youtube.com/watch?v=3FhBEjKGSx4",
+    "name_es": "Turco",
+    "family": "turkic_languages"
+  },
+  { "code": "tk", "name": "Turkmen" },
+  { "code": "tw", "name": "Twi" },
+  { "code": "ug", "name": "Uighur, Uyghur" },
+  {
+    "code": "uk",
+    "name": "Ukrainian",
+    "url": "https://www.youtube.com/watch?v=WIoZlhYj-2c",
+    "family": "salvic",
+    "name_es": "Ucraniano"
+  },
+  { "code": "ur", "name": "Urdu" },
+  { "code": "uz", "name": "Uzbek" },
+  { "code": "ve", "name": "Venda" },
+  {
+    "code": "vi",
+    "name": "Vietnamese",
+    "url": "https://www.youtube.com/watch?v=e0g82UKQNZk",
+    "name_es": "Vietnamita"
+  },
+  { "code": "vo", "name": "Volap_k" },
+  { "code": "wa", "name": "Walloon" },
+  {
+    "code": "cy",
+    "name": "Welsh",
+    "url": "https://www.youtube.com/watch?v=ufKf4eORcKA",
+    "name_es": "Galés"
+  },
+  { "code": "fy", "name": "Western Frisian" },
+  { "code": "wo", "name": "Wolof" },
+  { "code": "xh", "name": "Xhosa" },
+  { "code": "yi", "name": "Yiddish" },
+  { "code": "yo", "name": "Yoruba" },
+  { "code": "za", "name": "Zhuang, Chuang" },
+  { "code": "zu", "name": "Zulu" }
+]
