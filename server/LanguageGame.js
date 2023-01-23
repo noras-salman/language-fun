@@ -58,16 +58,22 @@ class GameState {
         clearTimeout(game.last_timeout);
         game.last_timeout = null;
       }
-      game.last_timeout = setTimeout(function () {
-        if (!game.players.find((player) => player.score > MAX_POINT)) {
-          game.getNextLanguage(languages);
-          game.broadcastGameChanges(wss, self);
-          that.prepareNext(wss, self, languages);
-        } else {
-          game.status = GameStatus.WAITING;
-          game.broadcastGameChanges(wss, self);
-        }
-      }, 32000);
+
+      if (game.players.find((player) => player.score > MAX_POINT)) {
+        game.status = GameStatus.WAITING;
+        game.broadcastGameChanges(wss, self);
+      } else {
+        game.last_timeout = setTimeout(function () {
+          if (!game.players.find((player) => player.score > MAX_POINT)) {
+            game.getNextLanguage(languages);
+            game.broadcastGameChanges(wss, self);
+            that.prepareNext(wss, self, languages);
+          } else {
+            game.status = GameStatus.WAITING;
+            game.broadcastGameChanges(wss, self);
+          }
+        }, 32000);
+      }
     } else {
       console.log("Game done");
     }
@@ -96,6 +102,7 @@ class Game {
     this.correct_answer = null;
     this.answers = 0;
     this.played_languages = [];
+    this.answered_users = [];
     this.last_ts = null;
     this.last_timeout = null;
   }
@@ -116,7 +123,7 @@ class Game {
     const languages_with_audio = languages.filter(
       (language) =>
         language.hasOwnProperty("url") &&
-        fs.existsSync(`./data/${language["code"]}.mp3`)
+        fs.existsSync(`../data/${language["code"]}.mp3`)
     );
     let selected = languages_with_audio.filter(
       (language) => !this.played_languages.includes(language["code"])
@@ -136,10 +143,11 @@ class Game {
     }
     this.correct_answer = selected["code"];
     this.answers = 0;
+    this.answered_users = [];
     this.options = this.build_options(languages, selected["code"]);
     this.last_ts = Math.floor(Date.now() / 1000);
     this.audio = Buffer.from(
-      fs.readFileSync(`./data/${selected["code"]}_${getRandomInt(3)}.mp3`)
+      fs.readFileSync(`../data/${selected["code"]}_${getRandomInt(3)}.mp3`)
     ).toString("base64");
   }
 

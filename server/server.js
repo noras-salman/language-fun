@@ -6,14 +6,14 @@ const fs = require("fs");
 const path = require("path");
 var LanguageGame = require("./LanguageGame.js");
 const port = 8080;
-const directoryToServe = "static/";
+const directoryToServe = "../game-app/build/";
 
 const server = http.createServer((req, res) => {
   // Get the file path
   var filePath = path.join(directoryToServe, req.url);
   console.log(filePath);
-  if (filePath == "static/") {
-    filePath = "static/index.html";
+  if (filePath == directoryToServe) {
+    filePath = directoryToServe + "index.html";
   }
   // Check if the file exists
   fs.exists(filePath, (exists) => {
@@ -30,7 +30,7 @@ const server = http.createServer((req, res) => {
 
 const wss = new WebSocket.Server({ server });
 
-let raw_data = fs.readFileSync("data/languages.json");
+let raw_data = fs.readFileSync("../data/languages.json");
 let languages = JSON.parse(raw_data);
 
 var gameState = new LanguageGame.GameState();
@@ -38,6 +38,7 @@ var gameState = new LanguageGame.GameState();
 //------------------------
 
 function sendPayload(self, payload) {
+  console.log("sending " + JSON.stringify(payload));
   self.send(JSON.stringify(payload));
 }
 
@@ -51,6 +52,7 @@ function handleMessage(self, payload) {
           ? "Player " + uuid.v4().substring(0, 5)
           : payload.name;
       self.name = payload.name;
+
       sendPayload(self, {
         type: "hello",
         payload: {
@@ -91,6 +93,9 @@ function handleMessage(self, payload) {
       if (gameState.findGameByAdminId(self.id)) {
         const game = gameState.findGameByAdminId(self.id);
         if (game.status == LanguageGame.GameStatus.WAITING) {
+          for (let i = 0; i < game.players.length; i++) {
+            game.players[i].score = 0;
+          }
           game.status = LanguageGame.GameStatus.ONGOING;
           game.getNextLanguage(languages);
           game.broadcastGameChanges(wss, self);
@@ -102,25 +107,32 @@ function handleMessage(self, payload) {
     case "answer":
       if (gameState.findGameById(self.game_id)) {
         const game = gameState.findGameById(self.game_id);
-        game.answers += 1;
-        if (game.correct_answer == payload.name) {
-          game.setPlayerScore(self.id);
-          const temp = {
-            ...game,
-            status: "playing",
-          };
-          LanguageGame.Game.broadcastGameChanges(wss, self, temp);
+        if (!game.answered_users.includes(self.id)) {
+          game.answered_users.push(self.id);
+          game.answers += 1;
 
-          sendPayload(self, {
-            type: "correct",
-          });
-        } else {
-          sendPayload(self, {
-            type: "wrong",
-            right: game.correct_answer,
-            options: game.options,
-          });
+          if (game.correct_answer == payload.name) {
+            game.setPlayerScore(self.id);
+            const temp = {
+              ...game,
+              status: "playing",
+            };
+            LanguageGame.Game.broadcastGameChanges(wss, self, temp);
+
+            sendPayload(self, {
+              type: "correct",
+            });
+          } else {
+            sendPayload(self, {
+              type: "wrong",
+              payload: {
+                answer: game.correct_answer,
+                options: game.options,
+              },
+            });
+          }
         }
+
         if (game.answers == game.players.length) {
           game.getNextLanguage(languages);
           game.broadcastGameChanges(wss, self);
