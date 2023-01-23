@@ -22,8 +22,21 @@ python download.py
 ### run server
 
 ```bash
+cd server
 npm install
 node server.js
+```
+
+### Build or run front-end
+
+```bash
+cd game-app
+npm install
+# run in development mode
+npm run start
+
+# run production mode (served from the server)
+npm run build
 ```
 
 Go to http://localhost:8080
